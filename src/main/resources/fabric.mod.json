@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "murderhelper",
+	"version": "${version}",
+	"name": "murderhelper",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://alexblock.org/",
+		"sources": "https://github.com/imalexblock"
+	},
+	"license": "GenshinImpact",
+	"icon": "assets/murderhelper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.alexblock.Murderhelper"
+		],
+		"fabric-datagen": [
+			"org.alexblock.MurderhelperDataGenerator"
+		]
+	},
+	"mixins": [
+		"murderhelper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
